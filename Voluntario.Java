@@ -18,5 +18,8 @@ public class Voluntario extends MembroONG{
 
     @Override
     public String exibirResumo() {
-        return super.exibirResumo() + ", Setor: " + setor;
+        return super.exibirResumo() + ", Setor: " + setor ;
+
+    }
+
 }
