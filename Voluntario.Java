@@ -7,4 +7,16 @@ public class Voluntario extends MembroONG{
         super(nome, cpf, diasAtuacao);
         this.setor = setor;
     }
+
+    public string getSetor() {
+        return setor;
+    }
+
+    public string setSetor() {
+        return this.setor = setor;
+    }
+
+    @Override
+    public String exibirResumo() {
+        return super.exibirResumo() + ", Setor: " + setor;
 }
