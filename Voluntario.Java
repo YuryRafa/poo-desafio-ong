@@ -8,11 +8,11 @@ public class Voluntario extends MembroONG{
         this.setor = setor;
     }
 
-    public string getSetor() {
+    public String getSetor() {
         return setor;
     }
 
-    public string setSetor() {
+    public String setSetor() {
         return this.setor = setor;
     }
 

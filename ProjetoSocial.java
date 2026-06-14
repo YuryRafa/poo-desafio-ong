@@ -9,7 +9,7 @@ public class ProjetoSocial {
         this.lider = lider;
     }
 
-    public string iniciarProjeto() {
+    public String iniciarProjeto() {
         return "Projeto " + nomeDoProjeto + " iniciado, liderado por " + lider.getNome() + ". Meta de impacto: " + metaImpacto;
     }
 

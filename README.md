@@ -1,6 +1,25 @@
 # Sistema de Gestão de ONG
 
-## ✅ Checklist de Implementação
+Sistema desenvolvido em Java aplicando os pilares da Programação Orientada a Objetos: **Encapsulamento**, **Herança** e **Composição**.
+
+---
+
+## Tecnologias
+
+- Java 21+
+
+---
+
+## Estrutura do Projeto
+
+root/
+├── MembroONG.java
+├── Voluntario.java
+├── Doador.java
+├── ProjetoSocial.java
+└── SistemaMain.java
+
+##  Checklist de Implementação
 
 ### 1. Superclasse `MembroONG`
 - [x] Atributo privado `nome` (String)
@@ -11,35 +30,35 @@
 - [x] Método `exibirResumo()` imprime nome e dias de atuação
 
 ### 2. Subclasse `Voluntario`
-- [ ] Herda de `MembroONG` com `extends`
-- [ ] Atributo específico `setor` (String)
-- [ ] Getter e Setter para `setor`
-- [ ] `@Override` em `exibirResumo()` incluindo o setor
+- [x] Herda de `MembroONG` com `extends`
+- [x] Atributo específico `setor` (String)
+- [x] Getter e Setter para `setor`
+- [x] `@Override` em `exibirResumo()` incluindo o setor
 
 ### 3. Subclasse `Doador`
-- [ ] Herda de `MembroONG` com `extends`
-- [ ] Atributo específico `valorDoadoMensal` (double)
-- [ ] Getter e Setter para `valorDoadoMensal`
-- [ ] `@Override` em `exibirResumo()` exibindo "Doador Ativo" e o valor
+- [x] Herda de `MembroONG` com `extends`
+- [x] Atributo específico `valorDoadoMensal` (double)
+- [x] Getter e Setter para `valorDoadoMensal`
+- [x] `@Override` em `exibirResumo()` exibindo "Doador Ativo" e o valor
 
 ### 4. Classe `ProjetoSocial`
-- [ ] Atributo `nomeDoProjeto` (String)
-- [ ] Atributo `metaImpacto` (int)
-- [ ] Atributo `lider` do tipo `Voluntario` (composição)
-- [ ] Método `iniciarProjeto()` imprime nome do projeto, líder e setor
+- [x] Atributo `nomeDoProjeto` (String)
+- [x] Atributo `metaImpacto` (int)
+- [x] Atributo `lider` do tipo `Voluntario` (composição)
+- [x] Método `iniciarProjeto()` imprime nome do projeto, líder e setor
 
 ### 5. Classe `SistemaMain`
-- [ ] Contém o método `main`
-- [ ] Instancia um `Voluntario` e preenche via Setters
-- [ ] Instancia um `Doador` e preenche via Setters
-- [ ] Instancia um `ProjetoSocial`
-- [ ] Atribui o voluntário como líder do projeto
-- [ ] Chama `exibirResumo()` do voluntário
-- [ ] Chama `exibirResumo()` do doador
-- [ ] Chama `iniciarProjeto()` do projeto
+- [x] Contém o método `main`
+- [x] Instancia um `Voluntario` e preenche via Setters
+- [x] Instancia um `Doador` e preenche via Setters
+- [x] Instancia um `ProjetoSocial`
+- [x] Atribui o voluntário como líder do projeto
+- [x] Chama `exibirResumo()` do voluntário
+- [x] Chama `exibirResumo()` do doador
+- [x] Chama `iniciarProjeto()` do projeto
 
 ### 6. Entrega
-- [ ] Código no GitHub (repositório público)
-- [ ] Prints de execução do programa
-- [ ] Link do repositório enviado no Google Forms
-- [ ] Entregue até **16/06/2026 às 23:59**
+- [x] Código no GitHub (repositório público)
+- [x] Prints de execução do programa
+- [x] Link do repositório enviado no Google Forms
+- [x] Entregue até **16/06/2026 às 23:59**
