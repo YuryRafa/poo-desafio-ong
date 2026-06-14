@@ -10,6 +10,7 @@ Sistema desenvolvido em Java aplicando os pilares da Programação Orientada a O
 
 ---
 
+
 ## Estrutura do Projeto
 
 ```text
@@ -19,7 +20,42 @@ root/
 ├── Doador.java
 ├── ProjetoSocial.java
 └── SistemaMain.java
+
 ```
+
+## Fluxo do Sistema
+
+```
+SistemaMain
+│
+├── instancia Voluntario via construtor + Setters (com validação)
+├── instancia Doador via construtor + Setters (com validação)
+│
+├── instancia ProjetoSocial
+│   └── recebe Voluntario como lider (composição)
+│
+├── Voluntario.exibirResumo()
+├── Doador.exibirResumo()
+└── ProjetoSocial.iniciarProjeto()
+```
+
+## Arquitetura das Classes
+
+```
+MembroONG
+├── Voluntario (extends MembroONG)
+└── Doador (extends MembroONG)
+
+ProjetoSocial
+└── lider: Voluntario (composição)
+```
+
+### Estrutura das Classes
+
+- `MembroONG` — superclasse com os atributos comuns a todos os membros.
+- `Voluntario` e `Doador` — herdam de `MembroONG`, cada um com seu atributo específico.
+- `ProjetoSocial` — classe independente que referencia um `Voluntario` como líder.
+
 
 ##  Checklist de Implementação
 
