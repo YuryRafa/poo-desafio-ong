@@ -94,9 +94,3 @@ ProjetoSocial
 - [x] Chama `exibirResumo()` do voluntário
 - [x] Chama `exibirResumo()` do doador
 - [x] Chama `iniciarProjeto()` do projeto
-
-### 6. Entrega
-- [x] Código no GitHub (repositório público)
-- [x] Prints de execução do programa
-- [x] Link do repositório enviado no Google Forms
-- [x] Entregue até **16/06/2026 às 23:59**
