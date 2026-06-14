@@ -1,7 +1,7 @@
 public class ProjetoSocial {
-    public String nomeDoProjeto;
-    public int metaImpacto;
-    public Voluntario lider;
+    private String nomeDoProjeto;
+    private int metaImpacto;
+    private Voluntario lider;
 
     public ProjetoSocial(String nomeDoProjeto, int metaImpacto, Voluntario lider) {
         this.nomeDoProjeto = nomeDoProjeto;
@@ -9,10 +9,39 @@ public class ProjetoSocial {
         this.lider = lider;
     }
 
-    public String iniciarProjeto() {
-        return "Projeto " + nomeDoProjeto + " iniciado, liderado por " + lider.getNome() + ". Meta de impacto: " + metaImpacto;
+    public String getNomeDoProjeto() {
+        return nomeDoProjeto;
     }
 
+    public int getMetaImpacto() {
+        return metaImpacto;
+    }
 
-    
+    public Voluntario getLider() {
+        return lider;
+    }
+
+    public void setNomeDoProjeto(String nomeDoProjeto) {
+        this.nomeDoProjeto = nomeDoProjeto;
+    }
+
+    public void setMetaImpacto(int metaImpacto) {
+        if (metaImpacto < 0) {
+            System.out.println("Meta de impacto não pode ser negativa.");
+        } else {
+            this.metaImpacto = metaImpacto;
+        }
+    }
+
+    public void setLider(Voluntario lider) {
+        this.lider = lider;
+    }
+
+    // Method
+    public void iniciarProjeto() {
+        System.out.println("Projeto " + nomeDoProjeto + " iniciado!");
+        System.out.println("Líder responsável: " + lider.getNome());
+        System.out.println("Setor: " + lider.getSetor());
+        System.out.println("Meta de impacto: " + metaImpacto + " pessoas atendidas.");
+    }
 }

@@ -3,8 +3,9 @@ public static void main(String[] args){
     Doador doador1 = new Doador("Maria", "98765432100", 60, 500.00);
     ProjetoSocial projeto1 = new ProjetoSocial("Horta Comunitária", 100, voluntario1);
 
-    exibirResumo(voluntario1);
-    exibirResumo(doador1);
+    voluntario1.exibirResumo();
+    doador1.exibirResumo();
+    
 
     System.out.println(projeto1.iniciarProjeto());
 }
