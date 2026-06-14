@@ -12,12 +12,14 @@ Sistema desenvolvido em Java aplicando os pilares da Programação Orientada a O
 
 ## Estrutura do Projeto
 
+```text
 root/
 ├── MembroONG.java
 ├── Voluntario.java
 ├── Doador.java
 ├── ProjetoSocial.java
 └── SistemaMain.java
+```
 
 ##  Checklist de Implementação
 
