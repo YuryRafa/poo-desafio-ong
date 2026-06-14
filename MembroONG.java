@@ -22,11 +22,11 @@ public class MembroONG{
     }
 
     public String setNome() {
-        return nome;
+        return this.nome = nome;
     }
     
     public String setCpf() {
-        return cpf;
+        return this.cpf = cpf;
     }
     
     public int setDiasAtuacao() {
@@ -34,14 +34,14 @@ public class MembroONG{
             System.out.println("Dias de atuação não podem ser negativos.");
             return this.diasAtuacao; 
         }
-        return diasAtuacao;
+        return this.diasAtuacao = diasAtuacao;
     }
 
     public String exibirResumo() {
         return "Membro: " + nome + ", CPF: " + cpf + ", Dias de Atuação: " + diasAtuacao;
     }
 
-    
+
 
 
 
