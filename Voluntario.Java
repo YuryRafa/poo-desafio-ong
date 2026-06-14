@@ -1,5 +1,5 @@
 public class Voluntario extends MembroONG{
-    public String setor
+    private String setor
     
 
 
