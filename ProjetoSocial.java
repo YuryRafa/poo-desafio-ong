@@ -37,12 +37,10 @@ public class ProjetoSocial {
         this.lider = lider;
     }
 
-    // Method
-    public String iniciarProjeto() {
+    public void iniciarProjeto() {
         System.out.println("Projeto " + nomeDoProjeto + " iniciado!");
         System.out.println("Líder responsável: " + lider.getNome());
         System.out.println("Setor: " + lider.getSetor());
         System.out.println("Meta de impacto: " + metaImpacto + " pessoas atendidas.");
-        return "Projeto iniciado com sucesso!";
     }
 }

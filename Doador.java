@@ -1,5 +1,6 @@
-public class Doador extends MembroONG{
+public class Doador extends MembroONG {
     private double valorDoadoMensal;
+
     public Doador(String nome, String cpf, int diasAtuacao, double valorDoadoMensal) {
         super(nome, cpf, diasAtuacao);
         this.valorDoadoMensal = valorDoadoMensal;
@@ -9,17 +10,16 @@ public class Doador extends MembroONG{
         return valorDoadoMensal;
     }
 
-    public double setValorDoadoMensal() {
-        if (valorDoadoMensal < 0) {
+    public void setValorDoadoMensal(double valor) {
+        if (valor < 0) {
             System.out.println("Valor doado mensal não pode ser negativo.");
-            return this.valorDoadoMensal; 
+        } else {
+            this.valorDoadoMensal = valor;
         }
-        return this.valorDoadoMensal = valorDoadoMensal;
     }
 
-
     @Override
-    public String exibirResumo() {
-        return super.exibirResumo() + ", Valor Doado Mensal: R$ " + valorDoadoMensal;
+    public void exibirResumo() {
+        System.out.println("Doador Ativo: " + getNome() + " | Valor mensal: R$ " + valorDoadoMensal + " | Dias de atuação: " + getDiasAtuacao());
     }
 }

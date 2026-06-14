@@ -1,4 +1,4 @@
-public class MembroONG{
+public class MembroONG {
     private String nome;
     private String cpf;
     private int diasAtuacao;
@@ -12,37 +12,32 @@ public class MembroONG{
     public String getNome() {
         return nome;
     }
-    
+
     public String getCpf() {
         return cpf;
     }
-    
+
     public int getDiasAtuacao() {
         return diasAtuacao;
     }
 
-    public String setNome() {
-        return this.nome = nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
-    
-    public String setCpf() {
-        return this.cpf = cpf;
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
-    
-    public int setDiasAtuacao() {
-        if (diasAtuacao < 0) {
+
+    public void setDiasAtuacao(int dias) {
+        if (dias < 0) {
             System.out.println("Dias de atuação não podem ser negativos.");
-            return this.diasAtuacao; 
+        } else {
+            this.diasAtuacao = dias;
         }
-        return this.diasAtuacao = diasAtuacao;
     }
 
-    public String exibirResumo() {
-        return "Membro: " + nome + ", CPF: " + cpf + ", Dias de Atuação: " + diasAtuacao;
+    public void exibirResumo() {
+        System.out.println("Membro: " + nome + " | CPF: " + cpf + " | Dias de atuação: " + diasAtuacao);
     }
-
-
-
-
-
 }
